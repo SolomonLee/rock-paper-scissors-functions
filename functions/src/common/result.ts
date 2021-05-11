@@ -1,4 +1,4 @@
-interface Result {
+export interface Result {
     datas: unknown;
     result: boolean;
     resultMsg: string;
