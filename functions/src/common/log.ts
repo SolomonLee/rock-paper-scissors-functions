@@ -16,3 +16,12 @@ export const successLog = (
     else console.log(`SUCCESS!!! ${functionName}: ${message}`);
     return;
 };
+
+export const commonLog = (
+    message: string,
+    functionName: string | null
+): void => {
+    if (typeof functionName === "undefined") console.log(`COMMON ${message}`);
+    else console.log(`COMMON ${functionName}: ${message}`);
+    return;
+};
