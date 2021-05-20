@@ -196,7 +196,7 @@ export const getGameRooms = functions.https.onCall(async () => {
         collectionGameRooms.forEach((doc) => {
             const room = doc.data() as Room;
 
-            if (room.state !== roomStateMap.Waiting) return;
+            // if (room.state !== roomStateMap.Waiting) return;
 
             console.log("getGameRooms #3 in forEach ");
             promiseArray.push(
